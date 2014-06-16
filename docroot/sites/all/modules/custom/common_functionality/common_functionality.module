@@ -1,5 +1,19 @@
 <?php
 
+// Define perm constants
+define('PERM_HOTDOG_ADMIN', 'Administer the HotDog.org site');
+
+// Hook perm
+function common_functionality_permission() {
+    return array(
+        PERM_HOTDOG_ADMIN => array(
+            'title' => t(PERM_HOTDOG_ADMIN),
+            'description' => t('Administer custom configurations for Hot-Dog.org'),
+        ),
+    );
+}
+
+
 /**
 * Implements hook_entity_info_alter(). Add display modes for nodes.
 */
@@ -8,4 +22,47 @@ function common_functionality_entity_info_alter(&$entity_info) {
     'label' => t('Press Release - List Item'),
     'custom settings' => TRUE,
   );
+}
+
+
+/**
+ * Implements hook_menu().
+ */
+function common_functionality_menu() {
+
+  $items = array();
+
+  $items['admin/config/hot-dog'] = array(
+    'title' => 'Hot-Dog.org settings',
+    'page callback' => 'common_functionality_settings_page_callback',
+    'access callback' => 'user_access',
+    'access arguments' => array(PERM_HOTDOG_ADMIN),
+  );
+  
+  return $items;
+}
+
+/**
+ * Admin settings page callback for HotDog.org settings.
+ */
+function common_functionality_settings_page_callback() {
+  $form_id = 'common_functionality_settings_form';
+  $form_elements = drupal_get_form($form_id);
+  $output = drupal_render($form_elements);
+
+  return $output;
+}
+
+function common_functionality_settings_form($form, &$form_state) {
+  $form = array();
+
+  $form['press_releases_page_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Drupal path for the Press Releases list page'),
+    '#description' => 'This should be a drupal path like "press-releases", NOT "/press-releases" or "press-releases/" or "http://www.not-this.org/press-releases".',
+    '#default_value' => variable_get('press_releases_page_url','press-releases'),
+  );
+  
+  $form = system_settings_form($form);
+  return $form;
 }
