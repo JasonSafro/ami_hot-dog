@@ -1,0 +1,84 @@
+<?php
+
+/**
+ * Implements hook_block_info()
+ */
+function custom_blocks_block_info() {
+  $blocks = array();
+
+  $blocks['press_releases_archive_options'] = array(
+    'info' => t('Press Releases Archive Options'),
+    'cache' => DRUPAL_CACHE_GLOBAL,
+  );
+  
+  return $blocks;
+}
+
+/**
+* Implements hook_block_view().
+*/
+function custom_blocks_block_view($delta = 'press_releases_archive_options') {
+  $block = array();
+
+  switch( $delta ) :
+
+    case 'press_releases_archive_options':
+      $block['subject'] = t('Press Releases');
+      $block['content'] = _custom_blocks_press_releases_archive_options_html();
+    break;
+  
+  endswitch;
+  
+  return $block;
+}
+
+/**
+ * Generate the HTML for Press Release Archive Options
+ */
+function _custom_blocks_press_releases_archive_options_html() {
+  $out = '';
+  
+  // Get all month/year combinations for valid press releases
+  $sql = "SELECT field_data_field_release_date.field_release_date_value as release_date
+    FROM {node} node
+      INNER JOIN {field_data_field_release_date} field_data_field_release_date ON node.nid=field_data_field_release_date.entity_id
+    WHERE node.type='press_releases' 
+      AND node.status=1";
+  $result = db_query($sql);
+  
+  $archive_options = array();
+  foreach($result as $one_row) :
+    $one_timestamp = strtotime($one_row->release_date);
+    $one_year = date('Y', $one_timestamp);
+    $one_month_number = date('n', $one_timestamp);
+    $one_month_name = date('F', $one_timestamp);
+    
+    $archive_options[ $one_year ][ $one_month_number ] = $one_month_name;
+  endforeach;
+  
+  // Sort the years
+  ksort($archive_options);
+  
+  // Build the list items
+  $list_items = array();
+  $press_release_page_path = variable_get('press_releases_page_url','press-releases');
+  foreach( $archive_options as $one_year => $one_year_options ) :
+    // Sort the months for this year
+    ksort( $one_year_options );
+    
+    // Add items to array
+    foreach( $one_year_options as $one_month => $one_month_name ) :
+      $list_items[] = l( $one_month_name.' '.$one_year, $press_release_page_path.'?field_release_date_value[value][month]='.$one_month.'&field_release_date_value[value][year]='.$one_year );
+    endforeach;
+  endforeach;
+  
+  // Now put it together
+  if( count($list_items)>0 ) :
+    $out = '<ul><li>'.implode('</li><li>', $list_items).'</li></ul>';
+  endif;
+  
+  
+  
+  return $out;
+}
+
