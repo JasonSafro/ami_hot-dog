@@ -1,0 +1,4 @@
+name = Common Functionality
+description = "Common libraries and other functionality"
+package = Custom
+core = 7.x

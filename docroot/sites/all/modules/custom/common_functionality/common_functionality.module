@@ -1,0 +1,11 @@
+<?php
+
+/**
+* Implements hook_entity_info_alter(). Add display modes for nodes.
+*/
+function common_functionality_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['press_release_list_item'] = array(
+    'label' => t('Press Release - List Item'),
+    'custom settings' => TRUE,
+  );
+}
