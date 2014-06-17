@@ -32,15 +32,16 @@
 .serif {font-family: 'Droid Serif', serif;}
 .smaller {font-size: 90%;}
 
-.text-light {font-weight: 300;}
-.text-heavy {font-weight: 600;}
+.text-light {font-weight: 400;}
+.text-heavy {font-weight: 800;}
 .text-upper { text-transform: uppercase;}
 
 .subheader {  font-weight: 300;  }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', 'Arial', sans-serif;
     line-height: 100%;
+    font-weight: 700;
     color:#DE591D;
 }
 
