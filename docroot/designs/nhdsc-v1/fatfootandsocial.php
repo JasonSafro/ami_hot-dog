@@ -1,7 +1,7 @@
 
 
 <div class="row gutter-bottom-lg">
-    <h1 class="dotted-header"><span>Out and About</span></h1>
+    <h2 class="dotted-header"><span>Connect With Us</span></h2>
     <div class="medium-12 medium-centered medium-offset-3 small-12 small-centered columns" >
         <div id="social">
         <p><a class="youtube" href="http://www.youtube.com/user/hotdogcouncil">YouTube</a></p>

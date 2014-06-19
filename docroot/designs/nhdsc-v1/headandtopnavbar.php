@@ -60,7 +60,7 @@
                         <li><a href="#">Hot Dogs in Sports</a></li>
                         <li><a href="#">Hot Dog and Sausage Fame</a></li>
                         <li><a href="#">Hot Dogs in Sports</a></li>
-                        <li><a href="#">Jokes & Quiz's</a></li>
+                        <li><a href="quiz.php">Quiz</a></li>
                     </ul>
                 </li>
                 <li><a href="restaurants.php">Restaurants</a></li>
