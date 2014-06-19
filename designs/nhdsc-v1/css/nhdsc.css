@@ -32,24 +32,56 @@
 .serif {font-family: 'Droid Serif', serif;}
 .smaller {font-size: 90%;}
 
-.text-light {font-weight: 400;}
-.text-heavy {font-weight: 800;}
+.text-light {font-weight: 300;}
+.text-heavy {font-weight: 600;}
 .text-upper { text-transform: uppercase;}
 
-.subheader {  font-weight: 300;  }
+/*QUICK SPACING */
+/*http://foundation.zurb.com/docs/utility-classes.html */
+
+.gutter-top-lg { margin-top: 30px; padding-top: 40px;}
+.gutter-bottom-lg {margin-bottom: 20px;}
+.gutter-left {margin-left: 20px;}
+.gutter-right {margin-right: 20px;}
+.gutter-top {margin-top: 25px;}
+.gutter-bottom {padding-bottom: 10px;}
+.gutter {margin: 10px 0 10px 0;}
+.gutter-less {}
+
+.roundcrnr {-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
+.max-wide {max-width: 600px;}
+
+.subheader {  font-weight: 600;  }
+
+body {
+    /*background: #FF9A00 url("http://www.hot-dog.org/ht/a/GetImageAction/i/99704");*/
+    /*background: url('../images/site-images/body-bkgrd.png') repeat scroll 0% 0% #F1EFE0;*/
+    font-family: 'Droid Serif', serif;
+}
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Raleway', 'Arial', sans-serif;
-    line-height: 100%;
-    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    line-height: 120%;
     color:#DE591D;
+}
+
+h2 {
+    font-size: 2em;
+    line-height: 1.2;
+    margin-bottom: 10px;}
+
+h3, h4 {
+font-weight: 500;
+line-height: 130%;
 }
 
 h1.main-header  {
     font-size: 3.5em;
     padding-top: 40px;
     margin-bottom: 20px;
-    line-height: 100%;}
+    line-height: 100%;
+    font-weight: 800;
+}
 
 h1.dotted-header:after, h1.cursive-header:after {
     content: "";
@@ -67,7 +99,6 @@ h1.dotted-header {
     position: relative;
     min-height: 27px;
     margin: 30px 30px;
-    font-family: 'Pacifico',cursive;
     font-size: 2em;
     font-weight: normal;
     text-align: center;}
@@ -78,24 +109,14 @@ h1.dotted-header span {
     padding: 0px 10px;
 }
 h1.dotted-header span {
-    /*background: red  0% 0% ;}*/
-background: url('./../img/site-images/patrn-creme.png') repeat scroll 0% 0% ;}
+    background: url('./../img/site-images/patrn-creme.png') repeat scroll 0% 0% ;}
+
+h1.dotted-header span.creme  {
+    background: #fffcef;}
+
 
 /*LAYOUT*/
 
-/*QUICK SPACING */
-/*http://foundation.zurb.com/docs/utility-classes.html */
-
-.gutter-top-lg { margin-top: 30px; padding-top: 40px;}
-.gutter-bottom-lg {margin-bottom: 20px;}
-.gutter-left {margin-left: 20px;}
-.gutter-right {margin-right: 20px;}
-.gutter-top {padding-top: 15px;}
-.gutter-bottom {padding-bottom: 5px;}
-.gutter {margin: 10px 0 10px 0;}
-
-.roundcrnr {-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
-.max-wide {max-width: 600px;}
 
 /*CUSTOM FOUNDATION OVERRIDES*/
 
@@ -106,7 +127,6 @@ background: url('./../img/site-images/patrn-creme.png') repeat scroll 0% 0% ;}
     width: 100%;
     color: #FFF;
     padding: 12px 0px 12px 15px;
-    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     font-size: 0.8125rem;
     font-weight: bolder;
     text-transform: none;
@@ -119,19 +139,44 @@ background: url('./../img/site-images/patrn-creme.png') repeat scroll 0% 0% ;}
     font-weight: bolder;
 }
 
-.panel {
+.custom-panel  {
     border-style: solid;
     border-width: 1px;
     border-color: #d8d8d8;
-    margin-bottom: 1.25rem;
-    padding: 1.25rem;
+    margin-bottom: 20px;
+    padding: 15px;
 }
 
+.noborder {
+    border-width: 0px;
+}
 
-body {
-    /*background: #FF9A00 url("http://www.hot-dog.org/ht/a/GetImageAction/i/99704");*/
-	/*background: url('../images/site-images/body-bkgrd.png') repeat scroll 0% 0% #F1EFE0;*/
-    font-family: 'Droid Serif', serif;
+.custom-panel-social {
+  min-height: 120px;
+   max-height: 120px;
+   margin-bottom: 20px;
+   padding: 10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+/*Tabs for Gallery foundation override*/
+
+.tabs dd > a, .tabs .tab-title > a {
+    background: none repeat scroll 0% 0% #007095;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 10px 20px;
+}
+
+.tabs dd > a:hover, .tabs .tab-title > a:hover {
+    color: #444;
+}
+
+.tabs dd.active a {
+    background: none repeat scroll 0% 0% #fffcef;
+    color: #339999;
 }
 
 .border-wrap {
@@ -155,7 +200,8 @@ body {
     min-height: 450px;
 }
 
-.checks {    background: url('./../img/site-images/full-width-bkgrds-checker.jpg') center center repeat no-repeat;}
+/*Background for home page*/
+.checks { background: url('./../img/site-images/full-width-bkgrds-checker.jpg') center center repeat no-repeat;}
 
 
 #features-hero {
@@ -164,9 +210,12 @@ body {
     padding:  20px 0 20px 0;
 }
 
+/*Background for allreceipes banner ad filler*/
 .bkgrd-wrap-2 {
     background: url('./../img/site-images/receipes.jpg') center center no-repeat #fff;
 }
+
+/*Used for round images shapes*/
 
 .discs {
     text-align: center; }
@@ -174,9 +223,116 @@ body {
     padding: 20px;
     max-height: 200px; }
 
-/*TESTING CSS*/
 
-/*Global Footer*/
+/*Responsive Google Map*/
+.iframe-rwd  {
+    position: relative;
+    padding-bottom: 65.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.iframe-rwd iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*end Responsive Google Map*/
+
+
+
+
+#social{
+    width:500px;
+    height:74px;
+}
+
+#social a.youtube {
+    display:block;
+    float:left;
+    height:74px;
+    width:75px;
+    margin:0px;
+    text-indent:-9999px;
+    background-image:url('./../img/site-images/social-sprite.png');
+    background-position:0px -74px;
+}
+
+#social a:hover.youtube {
+    background-image:url('./../img/site-images/social-sprite.png');
+    background-position:0px 0px;
+}
+
+#social a.facebook {
+    display:block;
+    float:left;
+    height:74px;
+    width:75px;
+    margin-left:20px;
+    text-indent:-9999px;
+    background-image:url('./../img/site-images/social-sprite.png');
+    background-position:-107px -74px;
+}
+
+#social a:hover.facebook {
+    background-image:url('./../img/site-images/social-sprite.png');
+    background-position:-107px -148px;
+}
+
+#social a.pinterest{
+    display:block;
+    float:left;
+    height:74px;
+    width:75px;
+    margin-left:20px;
+    text-indent:-9999px;
+    background-image:url('./../img/site-images/social-sprite.png');
+    background-position:-214px -220px;
+}
+
+#social a:hover.pinterest {
+    background-image:url('./../img/site-images/social-sprite.png');
+    background-position:-214px -442px;
+}
+
+
+#social a.allrecipes{
+    display:block;
+    float:left;
+    height:74px;
+    width:75px;
+    margin-left:20px;
+    text-indent:-9999px;
+    background-image:url('./../img/site-images/social-sprite.png');
+    background-position:-321px -370px;
+}
+
+#social a:hover.allrecipes {
+    background-image:url('./../img/site-images/social-sprite.png');
+    background-position:-321px -592px;
+}
+
+#social a.zazzle{
+    display:block;
+    float:left;
+    height:74px;
+    width:75px;
+    margin-left:20px;
+    text-indent:-9999px;
+    background-image:url('./../img/site-images/social-sprite.png');
+    background-position:-425px -220px;
+}
+
+#social a:hover.zazzle {
+    background-image:url('./../img/site-images/social-sprite.png');
+    background-position:-425px 298px;
+}
+
+
+
+/*TESTING CSS*/
 
 /*.bkgrd-wrap-1 {*/
     /*background-color: #9cd4ce;*/
