@@ -60,7 +60,7 @@
 
 <div class="row">
     <div class="large-12 columns">
-        <h1 class="dotted-header"><span> Our Supporters </span></h1>
+        <h2 class="dotted-header"><span> Our Supporters </span></h2>
     </div>
 </div>
 

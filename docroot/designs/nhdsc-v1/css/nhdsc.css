@@ -83,7 +83,7 @@ h1.main-header  {
     font-weight: 800;
 }
 
-h1.dotted-header:after, h1.cursive-header:after {
+h2.dotted-header:after, h2.cursive-header:after {
     content: "";
     position: absolute;
     top: 50%;
@@ -95,7 +95,7 @@ h1.dotted-header:after, h1.cursive-header:after {
     z-index: 1;
 }
 
-h1.dotted-header {
+h2.dotted-header {
     position: relative;
     min-height: 27px;
     margin: 30px 30px;
@@ -103,15 +103,15 @@ h1.dotted-header {
     font-weight: normal;
     text-align: center;}
 
-h1.dotted-header span {
+h2.dotted-header span {
     position: relative;
     z-index: 3;
     padding: 0px 10px;
 }
-h1.dotted-header span {
+h2.dotted-header span {
     background: url('./../img/site-images/patrn-creme.png') repeat scroll 0% 0% ;}
 
-h1.dotted-header span.creme  {
+h2.dotted-header span.creme  {
     background: #fffcef;}
 
 
@@ -241,9 +241,6 @@ h1.dotted-header span.creme  {
 }
 /*end Responsive Google Map*/
 
-
-
-
 #social{
     width:500px;
     height:74px;
@@ -330,7 +327,22 @@ h1.dotted-header span.creme  {
     background-position:-425px 298px;
 }
 
+/*Quiz*/
 
+.quiz { font-family: 'Raleway', sans-serif; }
+
+.question {
+    margin: 15px 0 15px;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    color:#993300;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.choice {
+    font-family: 'Raleway', sans-serif;
+}
 
 /*TESTING CSS*/
 

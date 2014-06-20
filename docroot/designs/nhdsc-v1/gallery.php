@@ -37,7 +37,7 @@
 </dl>
 <div class="tabs-content custom-panel noborder bkgrd-creme">
 <div class="content active" id="panel2-1">
-    <h1 class="dotted-header"><span class="creme">All Photos</span></h1>
+    <h2 class="dotted-header"><span class="creme">All Photos</span></h2>
 
     <div class="large-3 small-6 columns">
         <a href="#">
