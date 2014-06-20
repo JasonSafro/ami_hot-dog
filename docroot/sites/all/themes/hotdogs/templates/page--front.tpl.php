@@ -144,6 +144,19 @@
       <?php print render($page['content']); ?>
     </div>
     <!--/.main region -->
+    
+    <?php if (!empty($page['sidebar_first'])): ?>
+      <aside role="complementary" class="<?php print $sidebar_first_grid; ?> sidebar-first columns sidebar">
+        <?php print render($page['sidebar_first']); ?>
+      </aside>
+    <?php endif; ?>
+
+    <?php if (!empty($page['sidebar_second'])): ?>
+      <aside role="complementary" class="<?php print $sidebar_sec_grid; ?> sidebar-second columns sidebar">
+        <?php print render($page['sidebar_second']); ?>
+      </aside>
+    <?php endif; ?>    
+    
   </main>
   <!--/.main-->
 
