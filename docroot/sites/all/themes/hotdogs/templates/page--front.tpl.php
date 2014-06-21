@@ -9,7 +9,7 @@
       <?php if ($top_bar_classes): ?>
       <div class="<?php print $top_bar_classes; ?>">
       <?php endif; ?>
-        <nav class="top-bar"<?php print $top_bar_options; ?>>
+        <nav class="top-bar" data-topbar <?php print $top_bar_options; ?>>
           <ul class="title-area">
             <li class="name"><h1><?php print $linked_site_name; ?></h1></li>
             <li class="toggle-topbar menu-icon"><a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
@@ -144,7 +144,7 @@
       <?php print render($page['content']); ?>
     </div>
     <!--/.main region -->
-    
+
     <?php if (!empty($page['sidebar_first'])): ?>
       <aside role="complementary" class="<?php print $sidebar_first_grid; ?> sidebar-first columns sidebar">
         <?php print render($page['sidebar_first']); ?>
@@ -155,8 +155,7 @@
       <aside role="complementary" class="<?php print $sidebar_sec_grid; ?> sidebar-second columns sidebar">
         <?php print render($page['sidebar_second']); ?>
       </aside>
-    <?php endif; ?>    
-    
+    <?php endif; ?>
   </main>
   <!--/.main-->
 
