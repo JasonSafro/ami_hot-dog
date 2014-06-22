@@ -109,6 +109,15 @@
     <!--/.l-help -->
   <?php endif; ?>
 
+  <div id="banner-wrap">
+      <div class="row">
+          <div class="large-12 columns text-center gutter-top">
+              <h1 id="page-title" class="title text-white"><?php print $title; ?></h1>
+              <p class=" lead hide-for-small text-white">From the National Hot Dog and Sausage Council</p>
+          </div>
+      </div>
+  </div>
+
   <main role="main" class="row l-main gutter-top">
     <div class="<?php print $main_grid; ?> main columns">
       <?php if (!empty($page['highlighted'])): ?>
@@ -121,7 +130,7 @@
 
       <?php if ($title && !$is_front): ?>
         <?php print render($title_prefix); ?>
-        <h1 id="page-title" class="title"><?php print $title; ?></h1>
+        <h2 id="page-title" class="title"><?php print $title; ?></h2>
         <?php print render($title_suffix); ?>
       <?php endif; ?>
 

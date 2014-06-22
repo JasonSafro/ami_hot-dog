@@ -7348,6 +7348,11 @@ h2.dotted-header span.creme {
 /*****************************/
 /*      Drupal Specific      */
 /*****************************/
+/**** Common ****/
+#banner-wrap {
+  background-color: #c7c75a;
+}
+
 /**** Homepage Specific ****/
 /* Homepage Teasers */
 .block-views-nodequeue-1-homepage-teasers {
@@ -7509,4 +7514,9 @@ h2.dotted-header span.creme {
   padding: 0;
   list-style: none;
   border-top-color: white;
+}
+
+/**** Quiz Specific ****/
+.page-media-quiz #banner-wrap {
+  background-color: #de591d;
 }

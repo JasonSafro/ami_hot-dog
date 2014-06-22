@@ -109,7 +109,7 @@
     <!--/.l-help -->
   <?php endif; ?>
 
-  <div class="bkgrd-green">
+  <div id="banner-wrap">
       <div class="row ">
           <div class="large-12 columns text-center gutter-top">
               <h1 id="page-title" class="title text-white">Press Releases</h1>

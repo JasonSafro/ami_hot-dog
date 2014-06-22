@@ -390,6 +390,11 @@ h2.dotted-header span.creme  {
 /*      Drupal Specific      */
 /*****************************/
 
+/**** Common ****/
+#banner-wrap {
+	background-color: #c7c75a;
+}
+
 /**** Homepage Specific ****/
 
 /* Homepage Teasers */
@@ -555,3 +560,11 @@ h2.dotted-header span.creme  {
 		}	
 	}
 }
+
+/**** Quiz Specific ****/
+.page-media-quiz {
+	#banner-wrap {
+		background-color: #de591d;
+	}
+}
+
