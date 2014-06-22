@@ -13,6 +13,18 @@ function common_functionality_permission() {
     );
 }
 
+/**
+ * Implements hook_init().
+ */
+function common_functionality_init() {
+  // Get page node, if any, and put it into $GLOBALS
+  $page_node = menu_get_object();
+  if( is_object($page_node) && !empty($page_node->type) ) :
+    $GLOBALS['nodes']['page_node'] = $page_node;
+  endif;
+}
+  
+
 
 /**
 * Implements hook_entity_info_alter(). Add display modes for nodes.
