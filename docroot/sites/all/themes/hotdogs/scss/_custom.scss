@@ -1,0 +1,433 @@
+@mixin clearfix-micro {
+	&:before, &:after {
+		content: " "; /* 1 */
+		display: table; /* 2 */
+	}
+	&:after {
+		clear: both;
+	}
+	*zoom: 1;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,600,500);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+
+
+/*BACKGROUNDS */
+.bkgrd-white {background: #ffffff;}
+.bkgrd-creme {background: #fffcef;}
+.bkgrd-cremedk {background: #d6bb95
+}
+.bkgrd-hotdogred {background:#993300; }
+.bkgrd-lightred {background:#DE591D; }
+.bkgrd-orange {background: #FF6825;}
+.bkgrd-yellow {background: #FEC250}
+.bkgrd-teal {background: #339999;}
+.bkgrd-green {background: #c7c75a;}
+.bkgrd-grey {background: #555555;}
+.bkgrd-ltgrey {background: #cccccc;}
+
+.bkgrd-texture-creme {background: url('../images/patrn-creme.png') repeat scroll 0% 0% #F1EFE0;}
+.bkgrd-texture-grn-dots {background: url('../images/ptrn-dots-grn.png') repeat scroll 0% 0% #F1EFE0;}
+
+/*http://www.backgroundlabs.com/item/green-and-white-polka-dots/*/
+
+/*QUICK TEXT STYLES */
+.text-white {color: #ffffff !important;}
+.text-ltgrey {color: #cccccc;}
+.text-hotdogred {color:#993300; }
+.text-lightred {color:#DE591D; }
+.text-orange {color: #FF9A00;}
+.text-yellow {color: #FFCD00}
+.text-teal {color: #339999;}
+.text-green {color: #c7c75a;}
+.text-grey {color: #555555;}
+
+.sans {font-family: 'Raleway', sans-serif;}
+.serif {font-family: 'Droid Serif', serif;}
+.smaller {font-size: 90%;}
+
+.text-light {font-weight: 300;}
+.text-heavy {font-weight: 600;}
+.text-upper { text-transform: uppercase;}
+
+/*QUICK SPACING */
+/*http://foundation.zurb.com/docs/utility-classes.html */
+
+.gutter-top-lg { margin-top: 30px; padding-top: 40px;}
+.gutter-bottom-lg {margin-bottom: 20px;}
+.gutter-left {margin-left: 20px;}
+.gutter-right {margin-right: 20px;}
+.gutter-top {margin-top: 25px;}
+.gutter-bottom {padding-bottom: 10px;}
+.gutter {margin: 10px 0 10px 0;}
+.gutter-less {}
+
+.roundcrnr {-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
+.max-wide {max-width: 600px;}
+
+.subheader {  font-weight: 600;  }
+
+body {
+    /*background: #FF9A00 url("http://www.hot-dog.org/ht/a/GetImageAction/i/99704");*/
+    /*background: url('../images/site-images/body-bkgrd.png') repeat scroll 0% 0% #F1EFE0;*/
+    font-family: 'Droid Serif', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    line-height: 120%;
+    color:#DE591D;
+}
+
+h2 {
+    font-size: 2em;
+    line-height: 1.2;
+    margin-bottom: 10px;}
+
+h3, h4 {
+font-weight: 500;
+line-height: 130%;
+}
+
+h1.main-header  {
+    font-size: 3.5em;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    line-height: 100%;
+    font-weight: 800;
+}
+
+h2.dotted-header:after, h2.cursive-header:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    height: 0px;
+    width: 100%;
+    border-bottom: 2px dotted #B7B6B1;
+    overflow: hidden;
+    z-index: 1;
+}
+
+h2.dotted-header {
+    position: relative;
+    min-height: 27px;
+    margin: 30px 30px;
+    font-size: 2em;
+    font-weight: normal;
+    text-align: center;}
+
+h2.dotted-header span {
+    position: relative;
+    z-index: 3;
+    padding: 0px 10px;
+}
+h2.dotted-header span {
+    background: url('../images/patrn-creme.png') repeat scroll 0% 0% ;}
+
+h2.dotted-header span.creme  {
+    background: #fffcef;}
+
+
+/*LAYOUT*/
+
+
+/*CUSTOM FOUNDATION OVERRIDES*/
+
+/*top nav*/
+
+.top-bar-section ul li > a {
+    display: block;
+    width: 100%;
+    color: #FFF;
+    padding: 12px 0px 12px 15px;
+    font-size: 0.8125rem;
+    font-weight: bolder;
+    text-transform: none;
+    background: none repeat scroll 0% 0% #333;
+}
+
+.top-bar-section .dropdown li:not(.has-form) a:not(.button) {
+    color: #FFF;
+    background: none repeat scroll 0% 0% #333;
+    font-weight: bolder;
+}
+
+.custom-panel  {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d8d8d8;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.noborder {
+    border-width: 0px;
+}
+
+.custom-panel-social {
+  min-height: 120px;
+   max-height: 120px;
+   margin-bottom: 20px;
+   padding: 10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+/*Tabs for Gallery foundation override*/
+
+.tabs dd > a, .tabs .tab-title > a {
+    background: none repeat scroll 0% 0% #007095;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 10px 20px;
+}
+
+.tabs dd > a:hover, .tabs .tab-title > a:hover {
+    color: #444;
+}
+
+.tabs dd.active a {
+    background: none repeat scroll 0% 0% #fffcef;
+    color: #339999;
+}
+
+.border-wrap {
+    border-top: 1px solid #dddddd;
+    padding-top: 70px;
+}
+
+/*top bar FOUNDATION OVERRIDE*/
+.contain-to-grid { width: 100%; background: #993300; }
+
+
+/*CUSTOMISE THE FULLWIDTH-WRAP with colors and backgrounds*/
+.fullwidth-wrap {
+     background-repeat: no-repeat;
+     background-position: center 0;
+     -webkit-background-size: cover;
+     background-size: cover;
+ }
+.full-screen-photo {
+    width:100%;
+    min-height: 450px;
+}
+
+/*Background for home page*/
+.checks { background: url('../images/full-width-bkgrds-checker.jpg') center center repeat no-repeat;}
+
+
+#features-hero {
+    text-align: center;
+    position: relative;
+    padding:  20px 0 20px 0;
+}
+
+/*Background for allreceipes banner ad filler*/
+.bkgrd-wrap-2 {
+    background: url('../images/receipes.jpg') center center no-repeat #fff;
+}
+
+/*Used for round images shapes*/
+
+.discs {
+    text-align: center; }
+.discs img {
+    padding: 20px;
+    /*max-height: 200px;*/ }
+
+
+/*Responsive Google Map*/
+.iframe-rwd  {
+    position: relative;
+    padding-bottom: 65.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.iframe-rwd iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*end Responsive Google Map*/
+
+#social{
+    width:500px;
+    height:74px;
+}
+
+#social a.youtube {
+    display:block;
+    float:left;
+    height:74px;
+    width:75px;
+    margin:0px;
+    text-indent:-9999px;
+    background-image:url('../images/social-sprite.png');
+    background-position:0px -74px;
+}
+
+#social a:hover.youtube {
+    background-image:url('../images/social-sprite.png');
+    background-position:0px 0px;
+}
+
+#social a.facebook {
+    display:block;
+    float:left;
+    height:74px;
+    width:75px;
+    margin-left:20px;
+    text-indent:-9999px;
+    background-image:url('../images/social-sprite.png');
+    background-position:-107px -74px;
+}
+
+#social a:hover.facebook {
+    background-image:url('../images/social-sprite.png');
+    background-position:-107px -148px;
+}
+
+#social a.pinterest{
+    display:block;
+    float:left;
+    height:74px;
+    width:75px;
+    margin-left:20px;
+    text-indent:-9999px;
+    background-image:url('../images/social-sprite.png');
+    background-position:-214px -220px;
+}
+
+#social a:hover.pinterest {
+    background-image:url('../images/social-sprite.png');
+    background-position:-214px -442px;
+}
+
+
+#social a.allrecipes{
+    display:block;
+    float:left;
+    height:74px;
+    width:75px;
+    margin-left:20px;
+    text-indent:-9999px;
+    background-image:url('../images/social-sprite.png');
+    background-position:-321px -370px;
+}
+
+#social a:hover.allrecipes {
+    background-image:url('../images/social-sprite.png');
+    background-position:-321px -592px;
+}
+
+#social a.zazzle{
+    display:block;
+    float:left;
+    height:74px;
+    width:75px;
+    margin-left:20px;
+    text-indent:-9999px;
+    background-image:url('../images/social-sprite.png');
+    background-position:-425px -220px;
+}
+
+#social a:hover.zazzle {
+    background-image:url('../images/social-sprite.png');
+    background-position:-425px 298px;
+}
+
+/*Quiz*/
+
+.quiz { font-family: 'Raleway', sans-serif; }
+
+.question {
+    margin: 15px 0 15px;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    color:#993300;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.choice {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*TESTING CSS*/
+
+/*.bkgrd-wrap-1 {*/
+    /*background-color: #9cd4ce;*/
+    /*background: url('../images/hero-1.jpg') no-repeat 50% bottom;*/
+/*}*/
+
+/*.bkgrd-wrap-2 {*/
+    /*background-color: #fff;*/
+    /*background: url('../images/receipes.jpg') repeat no-repeat;*/
+/*}*/
+
+/*background: url('../images/yellow-bkgrd-lg.jpg') center center no-repeat;*/
+/*background: url('../images/patrn-creme.png') repeat scroll 0% 0% #F1EFE0;*/
+
+
+
+/*****************************/
+/*      Drupal Specific      */
+/*****************************/
+
+/**** Homepage Specific ****/
+
+/* Homepage Teasers */
+.block-views-nodequeue-1-homepage-teasers {
+	@include clearfix-micro;
+}
+
+/* Hot Topics */
+.block-views-nodequeue-2-homepage-hot-topics {
+	@include clearfix-micro;
+	.block-title {
+    position: relative;
+    min-height: 27px;
+    margin: 30px 30px;
+    font-weight: normal;
+    text-align: center;
+		&:after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0px;
+			height: 0px;
+			width: 100%;
+			border-bottom: 2px dotted #B7B6B1;
+			overflow: hidden;
+			z-index: 1;		
+		}
+		span {
+			position: relative;
+			z-index: 3;
+			padding: 0px 10px;
+			background: url('../images/patrn-creme.png') repeat scroll 0% 0%;
+			&.creme {
+				background: #fffcef;
+			}
+		}
+	}
+	.views-field-field-image {
+		margin-bottom: 20px;
+	}
+}
+
+.block-block-1 {
+	.block-title {
+		display: none;
+	}
+	.gutter-top-lg {
+		margin-top: 30px;
+    padding-top: 40px;
+	}
+}
