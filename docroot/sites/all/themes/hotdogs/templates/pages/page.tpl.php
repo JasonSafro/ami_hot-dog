@@ -136,7 +136,23 @@
         </ul>
       <?php endif; ?>
 
-      <?php print render($page['content']); ?>
+      <?php if( $page['content_top'] ) : ?>
+      <div class="region region-content">
+        <?php print render($page['content_top']); ?>
+      </div>
+      <?php endif; ?>
+      
+      <?php if( $page['content'] ) : ?>
+      <div class="region region-content">
+        <?php print render($page['content']); ?>
+      </div>
+      <?php endif; ?>
+      
+      <?php if( $page['content_bottom'] ) : ?>
+      <div class="region region-content">
+        <?php print render($page['content_bottom']); ?>
+      </div>
+      <?php endif; ?>
     </div>
     <!--/.main region -->
 

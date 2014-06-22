@@ -11,6 +11,26 @@ function custom_blocks_block_info() {
     'cache' => DRUPAL_CACHE_GLOBAL,
   );
   
+  $blocks['body_top'] = array(
+    'info' => t('Content: Body Top'),
+    'cache' => DRUPAL_CACHE_GLOBAL,
+  );
+  
+  $blocks['sidebar_left'] = array(
+    'info' => t('Content: Sidebar Left'),
+    'cache' => DRUPAL_CACHE_GLOBAL,
+  );
+  
+  $blocks['sidebar_right'] = array(
+    'info' => t('Content: Sidebar Right'),
+    'cache' => DRUPAL_CACHE_GLOBAL,
+  );
+  
+  $blocks['body_bottom'] = array(
+    'info' => t('Content: Body Bottom'),
+    'cache' => DRUPAL_CACHE_GLOBAL,
+  );
+  
   return $blocks;
 }
 
@@ -25,6 +45,26 @@ function custom_blocks_block_view($delta = 'press_releases_archive_options') {
     case 'press_releases_archive_options':
       $block['subject'] = t('Press Releases');
       $block['content'] = _custom_blocks_press_releases_archive_options_html();
+    break;
+    
+    case 'body_top':
+      $block['subject'] = '';
+      $block['content'] = _custom_blocks_body_field_html('field_body_top');
+    break;
+    
+    case 'sidebar_left':
+      $block['subject'] = '';
+      $block['content'] = _custom_blocks_body_field_html('field_left_sidebar');
+    break;
+    
+    case 'sidebar_right':
+      $block['subject'] = '';
+      $block['content'] = _custom_blocks_body_field_html('field_right_sidebar');
+    break;
+    
+    case 'body_bottom':
+      $block['subject'] = '';
+      $block['content'] = _custom_blocks_body_field_html('field_body_bottom');
     break;
   
   endswitch;
@@ -68,7 +108,10 @@ function _custom_blocks_press_releases_archive_options_html() {
     
     // Add items to array
     foreach( $one_year_options as $one_month => $one_month_name ) :
-      $list_items[] = l( $one_month_name.' '.$one_year, $press_release_page_path.'?field_release_date_value[value][month]='.$one_month.'&field_release_date_value[value][year]='.$one_year );
+      $list_items[] = l( $one_month_name.' '.$one_year, $press_release_page_path, array( 'query'=>array(
+        'field_release_date_value[value][month]' => $one_month,
+        'field_release_date_value[value][year]' => $one_year
+      ) ) );
     endforeach;
   endforeach;
   
@@ -82,3 +125,15 @@ function _custom_blocks_press_releases_archive_options_html() {
   return $out;
 }
 
+function _custom_blocks_body_field_html( $field = 'field_body_top' ) {
+  $out = '';
+
+  if( isset($GLOBALS['nodes']['page_node']->{$field}) && !empty($GLOBALS['nodes']['page_node']->{$field}[LANGUAGE_NONE][0]['value']) ) :
+    // Prep the copy
+    $item = field_get_items('node', $GLOBALS['nodes']['page_node'], $field);
+    $output = field_view_value('node', $GLOBALS['nodes']['page_node'], $field, $item[0]);
+    $out = render($output);
+  endif;
+  
+  return $out;
+}
