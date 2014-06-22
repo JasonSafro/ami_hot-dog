@@ -9,17 +9,14 @@
       <?php if ($top_bar_classes): ?>
       <div class="<?php print $top_bar_classes; ?>">
       <?php endif; ?>
-        <nav class="top-bar" data-topbar <?php print $top_bar_options; ?>>
+        <nav class="top-bar bkgrd-hotdogred" data-topbar <?php print $top_bar_options; ?>>
           <ul class="title-area">
             <li class="name"><h1><?php print $linked_site_name; ?></h1></li>
             <li class="toggle-topbar menu-icon"><a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
           </ul>
-          <section class="top-bar-section">
+          <section class="top-bar-section right">
             <?php if ($top_bar_main_menu) :?>
               <?php print $top_bar_main_menu; ?>
-            <?php endif; ?>
-            <?php if ($top_bar_secondary_menu) :?>
-              <?php print $top_bar_secondary_menu; ?>
             <?php endif; ?>
           </section>
         </nav>
@@ -204,14 +201,14 @@
   <footer class="l-footer" role="contentinfo">
     <div class="row gutter-bottom-lg">
         <h2 class="dotted-header"><span>Connect With Us</span></h2>
-        <div class="medium-12 medium-centered medium-offset-3 small-12 small-centered columns" >
-            <div id="social">
-            <p><a class="youtube" href="http://www.youtube.com/user/hotdogcouncil">YouTube</a></p>
-                <p><a class="facebook" href="https://www.facebook.com/NHDSC">Facebook</a></p>
-            <p><a class="pinterest" href="http://localhost/dev.hot-dog.local/designs/nhdsc-v1/index.php#">Pinterst</a></p>
-        <p><a class="allrecipes" href="http://allrecipes.com/cook/natlhotdogsausagecounci/">All Recipes</a></p>
-    <p><a class="zazzle" href="http://www.zazzle.com/hotdogcouncil">Zazzle</a></p>
-            </div>
+        <div class="medium-12 medium-centered small-12 small-centered columns" >
+            <ul id="social">
+              <li><a class="youtube" href="http://www.youtube.com/user/hotdogcouncil">YouTube</a></li>
+              <li><a class="facebook" href="https://www.facebook.com/NHDSC">Facebook</a></li>
+              <li><a class="pinterest" href="http://localhost/dev.hot-dog.local/designs/nhdsc-v1/index.php#">Pinterst</a></li>
+              <li><a class="allrecipes" href="http://allrecipes.com/cook/natlhotdogsausagecounci/">All Recipes</a></li>
+              <li><a class="zazzle" href="http://www.zazzle.com/hotdogcouncil">Zazzle</a></li>
+            </ul>
         </div>
     </div>
     

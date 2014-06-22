@@ -257,15 +257,33 @@ h2.dotted-header span.creme  {
 /*end Responsive Google Map*/
 
 #social{
-    width:500px;
-    height:74px;
+	max-width:500px;
+	min-height:74px;
+	margin: 0 auto;
+	text-align: center;
+	width: auto;
+	@include clearfix-micro();
+	li {
+		list-style: none;
+		display: inline-block;
+		text-align: left;
+		margin: 0 20px 15px 0;
+		&:last-child  {
+			margin-right: 0;
+		}
+		a {
+			display: block;
+			height:74px;
+			width:75px;
+			&:focus,
+			&:active {
+				outline: none;
+			}
+		}
+	}
 }
 
 #social a.youtube {
-    display:block;
-    float:left;
-    height:74px;
-    width:75px;
     margin:0px;
     text-indent:-9999px;
     background-image:url('../images/social-sprite.png');
@@ -278,27 +296,17 @@ h2.dotted-header span.creme  {
 }
 
 #social a.facebook {
-    display:block;
-    float:left;
-    height:74px;
-    width:75px;
-    margin-left:20px;
     text-indent:-9999px;
     background-image:url('../images/social-sprite.png');
-    background-position:-107px -74px;
+    background-position:-109px -74px;
 }
 
 #social a:hover.facebook {
     background-image:url('../images/social-sprite.png');
-    background-position:-107px -148px;
+    background-position:-109px -148px;
 }
 
 #social a.pinterest{
-    display:block;
-    float:left;
-    height:74px;
-    width:75px;
-    margin-left:20px;
     text-indent:-9999px;
     background-image:url('../images/social-sprite.png');
     background-position:-214px -220px;
@@ -311,11 +319,6 @@ h2.dotted-header span.creme  {
 
 
 #social a.allrecipes{
-    display:block;
-    float:left;
-    height:74px;
-    width:75px;
-    margin-left:20px;
     text-indent:-9999px;
     background-image:url('../images/social-sprite.png');
     background-position:-321px -370px;
@@ -327,11 +330,6 @@ h2.dotted-header span.creme  {
 }
 
 #social a.zazzle{
-    display:block;
-    float:left;
-    height:74px;
-    width:75px;
-    margin-left:20px;
     text-indent:-9999px;
     background-image:url('../images/social-sprite.png');
     background-position:-425px -220px;
@@ -391,37 +389,14 @@ h2.dotted-header span.creme  {
 .block-views-nodequeue-2-homepage-hot-topics {
 	@include clearfix-micro;
 	.block-title {
-    position: relative;
-    min-height: 27px;
-    margin: 30px 30px;
-    font-weight: normal;
-    text-align: center;
-		&:after {
-			content: "";
-			position: absolute;
-			top: 50%;
-			left: 0px;
-			height: 0px;
-			width: 100%;
-			border-bottom: 2px dotted #B7B6B1;
-			overflow: hidden;
-			z-index: 1;		
-		}
-		span {
-			position: relative;
-			z-index: 3;
-			padding: 0px 10px;
-			background: url('../images/patrn-creme.png') repeat scroll 0% 0%;
-			&.creme {
-				background: #fffcef;
-			}
-		}
+		font-size: 2.75rem;
 	}
 	.views-field-field-image {
 		margin-bottom: 20px;
 	}
 }
 
+/* How Hot Dogs Are Made */
 .block-block-1 {
 	.block-title {
 		display: none;
@@ -429,5 +404,50 @@ h2.dotted-header span.creme  {
 	.gutter-top-lg {
 		margin-top: 30px;
     padding-top: 40px;
+	}
+}
+
+/* Out and About */
+.block-views-nodequeue-3-out-and-about {
+	@include clearfix-micro;
+	.view-content {
+		.columns {
+			min-height: 260px;  /* this will need to be changed */
+			&:nth-child(1) {
+				.panel {
+					background-color: #fec250;
+				}
+			}
+			&:nth-child(2) {
+				.panel {
+					background-color:	#c7c75a;
+				}	
+			}
+			&:nth-child(3) {
+				.panel {
+					background-color:	#de591d;	
+				}
+			}
+			&:nth-child(4) {
+				.panel {
+					background-color: #339999;
+				}
+			}
+		}
+		.views-field-title {
+			font-size: 1.4375rem;
+			font-weight: 500;
+			@extend .sans;
+			margin-bottom: 0.625rem;
+		}
+		.views-field-body {
+			p {
+				color: #fff;
+				font-weight: 600;
+			}
+		}		
+		.views-field-field-website-url {
+			font-weight: 600;	
+		}
 	}
 }

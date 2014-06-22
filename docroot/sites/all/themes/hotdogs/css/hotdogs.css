@@ -6956,7 +6956,7 @@ th.hide-for-touch {
   color: #555555;
 }
 
-.sans {
+.sans, .block-views-nodequeue-3-out-and-about .view-content .views-field-title {
   font-family: 'Raleway', sans-serif;
 }
 
@@ -7215,15 +7215,41 @@ h2.dotted-header span.creme {
 
 /*end Responsive Google Map*/
 #social {
-  width: 500px;
+  max-width: 500px;
+  min-height: 74px;
+  margin: 0 auto;
+  text-align: center;
+  width: auto;
+  *zoom: 1;
+}
+#social:before, #social:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+#social:after {
+  clear: both;
+}
+#social li {
+  list-style: none;
+  display: inline-block;
+  text-align: left;
+  margin: 0 20px 15px 0;
+}
+#social li:last-child {
+  margin-right: 0;
+}
+#social li a {
+  display: block;
   height: 74px;
+  width: 75px;
+}
+#social li a:focus, #social li a:active {
+  outline: none;
 }
 
 #social a.youtube {
-  display: block;
-  float: left;
-  height: 74px;
-  width: 75px;
   margin: 0px;
   text-indent: -9999px;
   background-image: url("../images/social-sprite.png");
@@ -7236,27 +7262,17 @@ h2.dotted-header span.creme {
 }
 
 #social a.facebook {
-  display: block;
-  float: left;
-  height: 74px;
-  width: 75px;
-  margin-left: 20px;
   text-indent: -9999px;
   background-image: url("../images/social-sprite.png");
-  background-position: -107px -74px;
+  background-position: -109px -74px;
 }
 
 #social a:hover.facebook {
   background-image: url("../images/social-sprite.png");
-  background-position: -107px -148px;
+  background-position: -109px -148px;
 }
 
 #social a.pinterest {
-  display: block;
-  float: left;
-  height: 74px;
-  width: 75px;
-  margin-left: 20px;
   text-indent: -9999px;
   background-image: url("../images/social-sprite.png");
   background-position: -214px -220px;
@@ -7268,11 +7284,6 @@ h2.dotted-header span.creme {
 }
 
 #social a.allrecipes {
-  display: block;
-  float: left;
-  height: 74px;
-  width: 75px;
-  margin-left: 20px;
   text-indent: -9999px;
   background-image: url("../images/social-sprite.png");
   background-position: -321px -370px;
@@ -7284,11 +7295,6 @@ h2.dotted-header span.creme {
 }
 
 #social a.zazzle {
-  display: block;
-  float: left;
-  height: 74px;
-  width: 75px;
-  margin-left: 20px;
   text-indent: -9999px;
   background-image: url("../images/social-sprite.png");
   background-position: -425px -220px;
@@ -7360,40 +7366,59 @@ h2.dotted-header span.creme {
   clear: both;
 }
 .block-views-nodequeue-2-homepage-hot-topics .block-title {
-  position: relative;
-  min-height: 27px;
-  margin: 30px 30px;
-  font-weight: normal;
-  text-align: center;
-}
-.block-views-nodequeue-2-homepage-hot-topics .block-title:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0px;
-  height: 0px;
-  width: 100%;
-  border-bottom: 2px dotted #B7B6B1;
-  overflow: hidden;
-  z-index: 1;
-}
-.block-views-nodequeue-2-homepage-hot-topics .block-title span {
-  position: relative;
-  z-index: 3;
-  padding: 0px 10px;
-  background: url("../images/patrn-creme.png") repeat scroll 0% 0%;
-}
-.block-views-nodequeue-2-homepage-hot-topics .block-title span.creme {
-  background: #fffcef;
+  font-size: 2.75rem;
 }
 .block-views-nodequeue-2-homepage-hot-topics .views-field-field-image {
   margin-bottom: 20px;
 }
 
+/* How Hot Dogs Are Made */
 .block-block-1 .block-title {
   display: none;
 }
 .block-block-1 .gutter-top-lg {
   margin-top: 30px;
   padding-top: 40px;
+}
+
+/* Out and About */
+.block-views-nodequeue-3-out-and-about {
+  *zoom: 1;
+}
+.block-views-nodequeue-3-out-and-about:before, .block-views-nodequeue-3-out-and-about:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.block-views-nodequeue-3-out-and-about:after {
+  clear: both;
+}
+.block-views-nodequeue-3-out-and-about .view-content .columns {
+  min-height: 260px;
+  /* this will need to be changed */
+}
+.block-views-nodequeue-3-out-and-about .view-content .columns:nth-child(1) .panel {
+  background-color: #fec250;
+}
+.block-views-nodequeue-3-out-and-about .view-content .columns:nth-child(2) .panel {
+  background-color: #c7c75a;
+}
+.block-views-nodequeue-3-out-and-about .view-content .columns:nth-child(3) .panel {
+  background-color: #de591d;
+}
+.block-views-nodequeue-3-out-and-about .view-content .columns:nth-child(4) .panel {
+  background-color: #339999;
+}
+.block-views-nodequeue-3-out-and-about .view-content .views-field-title {
+  font-size: 1.4375rem;
+  font-weight: 500;
+  margin-bottom: 0.625rem;
+}
+.block-views-nodequeue-3-out-and-about .view-content .views-field-body p {
+  color: #fff;
+  font-weight: 600;
+}
+.block-views-nodequeue-3-out-and-about .view-content .views-field-field-website-url {
+  font-weight: 600;
 }
