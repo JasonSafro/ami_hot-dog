@@ -1,12 +1,14 @@
 /*BACKGROUNDS */
 .bkgrd-white {background: #ffffff;}
 .bkgrd-creme {background: #fffcef;}
-.bkgrd-cremedk {background: #d6bb95
-}
+.bkgrd-cremedk {background: #d6bb95;}
+
 .bkgrd-hotdogred {background:#993300; }
 .bkgrd-lightred {background:#DE591D; }
 .bkgrd-orange {background: #FF6825;}
-.bkgrd-yellow {background: #FEC250}
+.bkgrd-yellow {background: #FEC250;}
+.bkgrd-liteyellow {background: #FFDF80;}
+
 .bkgrd-teal {background: #339999;}
 .bkgrd-green {background: #c7c75a;}
 .bkgrd-grey {background: #555555;}
@@ -329,20 +331,28 @@ h2.dotted-header span.creme  {
 
 /*Quiz*/
 
-.quiz { font-family: 'Raleway', sans-serif; }
+.quiz { font-family: 'Raleway', sans-serif;
+
+}
 
 .question {
     margin: 15px 0 15px;
-    font-size: 1.2em;
+    font-size: 1.6em;
     line-height: 1.2em;
     color:#993300;
     font-weight: 500;
     font-family: 'Raleway', sans-serif;
 }
+.answers {
 
-.choice {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-weight: 500;
     font-family: 'Raleway', sans-serif;
 }
+
+
+
 
 /*TESTING CSS*/
 
