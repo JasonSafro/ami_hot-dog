@@ -92,10 +92,11 @@
     </div>
 
     <div class="large-12 medium-12 columns gutter-top-lg">
-        <div class="custom-panel bkgrd-teal">
-    <h3>Think you know everything about hot dogs and sausage?</h3>
-    <p>Take our fabulous quiz and find out.</p>
-    <p><a href="quiz.php" class="secondary button">Take the Quiz</a></p>
+        <div class="custom-panel roundcrnr bkgrd-teal">
+    <h2 class="xlarge-text-center text-white">Think you know everything about hot dogs and sausage?</h2>
+    <h3 class="xlarge-text-center text-white" >Take our fabulous quiz and find out.</h3>
+            <br>
+    <p class="text-center"><a href="quiz.php" class="medium button center bkgrd-green">Take the Quiz</a></p>
   </div>
 </div>
 
