@@ -64,7 +64,7 @@
     </div>
 </div>
 
-<h1 class="dotted-header"><span>Hot Topics</span></h1>
+<h2 class="dotted-header"><span>Hot Topics</span></h2>
 
 
 <div class="fullwidth-wrap">

@@ -13,7 +13,7 @@
     <!--ADD NEW STUFF HERE -->
 
 
-<div class="bkgrd-yellow">
+<div class="bkgrd-grey">
     <div class="row ">
         <div class="large-12 columns text-center gutter-top">
             <h1 class="text-white">Restaurants</h1>
