@@ -417,7 +417,13 @@ h2.dotted-header span.creme  {
 
 
 /**** Homepage Specific ****/
-
+.block-views-nodequeue-1-homepage-teasers {
+	.columns {
+		.learn-more {
+			display: none;
+		}
+	}
+}
 
 
 /* Hot Topics */

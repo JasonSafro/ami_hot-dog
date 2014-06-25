@@ -84,5 +84,5 @@
 
 <?php print render($content['body']); ?>
 	
-<?php print l('Learn more →', 'node/'.$node->nid); ?> 
+<div class="learn-more"><?php print l('Learn more →', 'node/'.$node->nid); ?></div>
 </article>
