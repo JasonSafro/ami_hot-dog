@@ -73,11 +73,16 @@
  * @see template_preprocess()
  * @see template_preprocess_node()
  * @see template_process()
- */
+ */ 
 ?>
 	<?php //echo '<pre>'.var_dump($node).'</pre>'; die; ?>
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
-Cooper please edit <?php print __FILE__.' - '.__LINE__; ?>
-  
+<?php print render($content['field_round_teaser_image']); ?>
+
+<h3><?php print l($title, 'node/'.$node->nid); ?></h3>
+
+<?php print render($content['body']); ?>
+	
+<?php print l('Learn more →', 'node/'.$node->nid); ?> 
 </article>

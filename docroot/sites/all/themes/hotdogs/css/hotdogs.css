@@ -7364,34 +7364,38 @@ h2.dotted-header span.creme {
   background-color: #c7c75a;
 }
 
-/**** Homepage Specific ****/
 /* Homepage Teasers */
-.block-views-nodequeue-1-homepage-teasers {
+.block-views-nodequeue-1-homepage-teasers,
+.block-views-nodequeue-2-homepage-hot-topics,
+.block-views-nodequeue-7-resources,
+.block-views-nodequeue-5-culture,
+.block-views-nodequeue-4-sausage {
   *zoom: 1;
 }
-.block-views-nodequeue-1-homepage-teasers:before, .block-views-nodequeue-1-homepage-teasers:after {
+.block-views-nodequeue-1-homepage-teasers:before, .block-views-nodequeue-1-homepage-teasers:after,
+.block-views-nodequeue-2-homepage-hot-topics:before,
+.block-views-nodequeue-2-homepage-hot-topics:after,
+.block-views-nodequeue-7-resources:before,
+.block-views-nodequeue-7-resources:after,
+.block-views-nodequeue-5-culture:before,
+.block-views-nodequeue-5-culture:after,
+.block-views-nodequeue-4-sausage:before,
+.block-views-nodequeue-4-sausage:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
-.block-views-nodequeue-1-homepage-teasers:after {
+.block-views-nodequeue-1-homepage-teasers:after,
+.block-views-nodequeue-2-homepage-hot-topics:after,
+.block-views-nodequeue-7-resources:after,
+.block-views-nodequeue-5-culture:after,
+.block-views-nodequeue-4-sausage:after {
   clear: both;
 }
 
+/**** Homepage Specific ****/
 /* Hot Topics */
-.block-views-nodequeue-2-homepage-hot-topics {
-  *zoom: 1;
-}
-.block-views-nodequeue-2-homepage-hot-topics:before, .block-views-nodequeue-2-homepage-hot-topics:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-.block-views-nodequeue-2-homepage-hot-topics:after {
-  clear: both;
-}
 .block-views-nodequeue-2-homepage-hot-topics .block-title {
   font-size: 2.75rem;
 }
@@ -7570,4 +7574,24 @@ h2.dotted-header span.creme {
   height: auto;
   width: auto;
   line-height: 20px;
+}
+
+/**** Sausage Basics Specific ****/
+.section-sausage #banner-wrap {
+  background-color: #fec250;
+}
+
+/**** Culture Specific ****/
+.section-culture #banner-wrap {
+  background-color: #339999;
+}
+
+/**** Restaurants Specific ****/
+.section-restaurants #banner-wrap {
+  background-color: #555555;
+}
+
+/**** Resources Specific ****/
+.section-resources #banner-wrap {
+  background-color: #de591d;
 }

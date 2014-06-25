@@ -406,17 +406,22 @@ h2.dotted-header span.creme  {
 #banner-wrap {
 	background-color: #c7c75a;
 }
-
-/**** Homepage Specific ****/
-
 /* Homepage Teasers */
-.block-views-nodequeue-1-homepage-teasers {
+.block-views-nodequeue-1-homepage-teasers,
+.block-views-nodequeue-2-homepage-hot-topics,
+.block-views-nodequeue-7-resources,
+.block-views-nodequeue-5-culture,
+.block-views-nodequeue-4-sausage {
 	@include clearfix-micro;
 }
 
+
+/**** Homepage Specific ****/
+
+
+
 /* Hot Topics */
 .block-views-nodequeue-2-homepage-hot-topics {
-	@include clearfix-micro;
 	.block-title {
 		font-size: 2.75rem;
 	}
@@ -626,6 +631,34 @@ h2.dotted-header span.creme  {
 			width: auto;
 			line-height: 20px;
 		}
+	}
+}
+
+/**** Sausage Basics Specific ****/
+.section-sausage {
+	#banner-wrap {
+		background-color: #fec250;
+	}
+}
+
+/**** Culture Specific ****/
+.section-culture {
+	#banner-wrap {
+		background-color: #339999;
+	}
+}
+
+/**** Restaurants Specific ****/
+.section-restaurants {
+	#banner-wrap {
+		background-color: #555555;
+	}
+}
+
+/**** Resources Specific ****/
+.section-resources {
+	#banner-wrap {
+		background-color: #de591d;
 	}
 }
 

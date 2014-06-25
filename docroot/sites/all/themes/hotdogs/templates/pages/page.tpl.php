@@ -89,15 +89,6 @@
     <!--/.l-featured -->
   <?php endif; ?>
 
-  <?php if ($messages && !$zurb_foundation_messages_modal): ?>
-    <!--/.l-messages -->
-    <section class="l-messages row">
-      <div class="large-12 columns">
-        <?php if ($messages): print $messages; endif; ?>
-      </div>
-    </section>
-    <!--/.l-messages -->
-  <?php endif; ?>
 
   <?php if (!empty($page['help'])): ?>
     <!--/.l-help -->
@@ -117,32 +108,29 @@
           </div>
       </div>
   </div>
+	<div class="row gutter-top">
 
-  <main role="main" class="row l-main gutter-top">
-    <div class="<?php print $main_grid; ?> main columns">
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlight panel callout">
           <?php print render($page['highlighted']); ?>
         </div>
       <?php endif; ?>
-
-      <a id="main-content"></a>
-
-      <?php if ($title && !$is_front): ?>
-        <?php print render($title_prefix); ?>
-        <h2 id="page-title" class="title"><?php print $title; ?></h2>
-        <?php print render($title_suffix); ?>
+      
+			<?php if ($messages && !$zurb_foundation_messages_modal): ?>
+        <!--/.l-messages -->
+        <section class="l-messages">
+          <div class="large-12 columns">
+            <?php if ($messages): print $messages; endif; ?>
+          </div>
+        </section>
+        <!--/.l-messages -->
       <?php endif; ?>
 
       <?php if (!empty($tabs)): ?>
-        <?php print render($tabs); ?>
-        <?php if (!empty($tabs2)): print render($tabs2); endif; ?>
-      <?php endif; ?>
-
-      <?php if ($action_links): ?>
-        <ul class="action-links">
-          <?php print render($action_links); ?>
-        </ul>
+      	<div class="columns">
+					<?php print render($tabs); ?>
+          <?php if (!empty($tabs2)): print render($tabs2); endif; ?>
+        </div>
       <?php endif; ?>
 
       <?php if( $page['content_top'] ) : ?>
@@ -150,6 +138,20 @@
         <?php print render($page['content_top']); ?>
       </div>
       <?php endif; ?>
+
+	</div>
+  <main role="main" class="row l-main gutter-top">
+    <div class="<?php print $main_grid; ?> main columns">
+
+      <a id="main-content"></a>
+
+      <?php if ($action_links): ?>
+        <ul class="action-links">
+          <?php print render($action_links); ?>
+        </ul>
+      <?php endif; ?>
+
+
       
       <?php if( $page['content'] ) : ?>
       <div class="region region-content">
@@ -157,11 +159,7 @@
       </div>
       <?php endif; ?>
       
-      <?php if( $page['content_bottom'] ) : ?>
-      <div class="region region-content">
-        <?php print render($page['content_bottom']); ?>
-      </div>
-      <?php endif; ?>
+
     </div>
     <!--/.main region -->
 
@@ -221,7 +219,15 @@
     </section>
     <!--/.footer-columns-->
   <?php endif; ?>
-
+  
+ 	<div class="row gutter-top"> 
+      <?php if( $page['content_bottom'] ) : ?>
+      <div class="region region-content">
+        <?php print render($page['content_bottom']); ?>
+      </div>
+      <?php endif; ?>  
+	</div>
+  
   <!--.l-footer-->
   <footer class="l-footer" role="contentinfo">
     <div class="row gutter-bottom-lg">
