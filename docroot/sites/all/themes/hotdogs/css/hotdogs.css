@@ -7393,6 +7393,13 @@ h2.dotted-header span.creme {
 .block-views-nodequeue-4-sausage:after {
   clear: both;
 }
+.block-views-nodequeue-1-homepage-teasers .columns:last-child,
+.block-views-nodequeue-2-homepage-hot-topics .columns:last-child,
+.block-views-nodequeue-7-resources .columns:last-child,
+.block-views-nodequeue-5-culture .columns:last-child,
+.block-views-nodequeue-4-sausage .columns:last-child {
+  float: left;
+}
 
 /**** Homepage Specific ****/
 .block-views-nodequeue-1-homepage-teasers .columns .learn-more {

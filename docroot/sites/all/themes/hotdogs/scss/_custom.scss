@@ -413,6 +413,11 @@ h2.dotted-header span.creme  {
 .block-views-nodequeue-5-culture,
 .block-views-nodequeue-4-sausage {
 	@include clearfix-micro;
+	.columns {
+		&:last-child {
+			float: left;
+		}
+	}
 }
 
 
