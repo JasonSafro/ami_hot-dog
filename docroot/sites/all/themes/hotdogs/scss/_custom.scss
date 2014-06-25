@@ -403,6 +403,11 @@ h2.dotted-header span.creme  {
 /*****************************/
 
 /**** Common ****/
+.top-bar.expanded .toggle-topbar a span {
+	box-shadow: none;
+}
+
+
 #banner-wrap {
 	background-color: #c7c75a;
 }

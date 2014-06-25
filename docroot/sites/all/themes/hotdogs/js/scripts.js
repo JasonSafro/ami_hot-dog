@@ -1,5 +1,11 @@
 (function ($, Drupal) {
 
+  Drupal.behaviors.removeClass = {
+    attach: function(context, settings) {
+			$('#main-menu').removeClass('left');
+    }
+  };
+				
   Drupal.behaviors.quizQuestions = {
     attach: function(context, settings) {
 
@@ -54,13 +60,8 @@
 					
 				});
 			});
-
-
     }
   };
-
-
-
 
  	Drupal.behaviors.equalHeights = {
     attach: function(context, settings) {

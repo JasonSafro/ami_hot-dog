@@ -7360,6 +7360,11 @@ h2.dotted-header span.creme {
 /*      Drupal Specific      */
 /*****************************/
 /**** Common ****/
+.top-bar.expanded .toggle-topbar a span {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 #banner-wrap {
   background-color: #c7c75a;
 }

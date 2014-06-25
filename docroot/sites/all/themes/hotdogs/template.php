@@ -16,8 +16,26 @@
  * Implements template_preprocess_page
  *
  */
-//function hotdogs_preprocess_page(&$variables) {
-//}
+function hotdogs_preprocess_page(&$variables) {
+	
+  // Top bar menus.
+  $variables['top_bar_main_menu'] = '';
+  if (!empty($variables['main_menu'])) {
+    $variables['top_bar_main_menu'] = theme('links__topbar_main_menu', array(
+      'links' => $variables['main_menu'],
+      'attributes' => array(
+        'id' => 'main-menu',
+        'class' => array('main-nav right'),
+      ),
+      'heading' => array(
+        'text' => t('Main menu'),
+        'level' => 'h2',
+        'class' => array('element-invisible'),
+      ),
+    ));
+  }	
+	
+}
 
 /**
  * Implements template_preprocess_node
