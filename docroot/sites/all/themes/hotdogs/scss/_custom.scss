@@ -358,9 +358,21 @@ h2.dotted-header span.creme  {
 
 .question {
     margin: 15px 0 15px;
-    font-size: 1.2em;
+    font-size: 1.6em;
     line-height: 1.2em;
     color:#993300;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+		p {
+			font-size: inherit;
+			line-height: inherit;
+		}
+}
+
+.answers {
+
+    font-size: 1.2em;
+    line-height: 1.2em;
     font-weight: 500;
     font-family: 'Raleway', sans-serif;
 }
@@ -565,6 +577,55 @@ h2.dotted-header span.creme  {
 .page-media-quiz {
 	#banner-wrap {
 		background-color: #de591d;
+	}
+	.node-quiz-question {
+		@extend .sans;
+		ul {
+			li {
+				margin: 0;
+			}
+		}
+	}
+  .reveal {
+    display: none;
+		.additional-information {
+			p {
+				font-size: 1.4375rem;
+			}
+		}
+  }
+	.orbit-container {
+		padding-bottom: 60px;
+		.orbit-slides-container {
+			.views-row {
+				.node-title {
+					display: none;
+				}
+			}
+		}	
+	}
+	.orbit-prev,
+	.orbit-next {
+		top: inherit;
+		bottom: 0;
+		margin: 0;
+		text-indent: 0 !important;
+		width: auto;
+		height: auto;
+		&:hover,
+		&:focus {
+			background-color: #007095;
+		}
+		span {
+			position: static;
+			margin: 0;
+			top: inherit;
+			left: inherit;
+			border: none;
+			height: auto;
+			width: auto;
+			line-height: 20px;
+		}
 	}
 }
 

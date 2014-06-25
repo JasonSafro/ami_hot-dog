@@ -114,47 +114,20 @@ shuffle($possible_answers);
   <?php endif; ?>
   <?php print render($title_suffix); ?>
   
-  <?php print render($content['field_question']); ?>
+  <div class="question"><?php print render($content['field_question']); ?></div>
   
-  <ul>
+  <ul class="square answers">
   <?php foreach( $possible_answers as $one_answer ) : ?>
     <li class="one-answer one-answer-<?php print $one_answer['type']; ?>" data-answer-type="<?php print $one_answer['type']; ?>" data-nid="<?php print $node->nid; ?>"><?php print $one_answer['answer']; ?></li>
   <?php endforeach; ?>
   </ul>
   
   <div class="reveal">
-    <div class="response" id="response-<?php print $node->nid; ?>"></div>
-    <div class="additional-information"><?php print render($content['field_additional_information']); ?></div>
+    <h2 class="response" id="response-<?php print $node->nid; ?>"></h2>
+    <div class="additional-information text-grey"><?php print render($content['field_additional_information']); ?></div>
   </div>
 
 
 </article>
 
-<style>
-  .reveal {
-    display: none;
-  }
-</style>
 
-<script>
-  jQuery( document ).ready(function() {
-    jQuery('.one-answer').click(function() {
-      // Get the NID
-      var nid = jQuery(this).attr("data-nid");
-      
-      // Mark up the answers
-      jQuery('#node-' + nid + ' .one-answer-correct').css('color','green');
-      jQuery('#node-' + nid + ' .one-answer-incorrect').css('color','red');
-      
-      // Right or wrong
-      if( jQuery(this).attr('data-answer-type') == 'correct' ) {
-        jQuery('#response-' + nid).html('Right!');
-      } else {
-        jQuery('#response-' + nid).html('False!');
-      }
-      
-      // Reveal
-      jQuery('#node-' + nid + ' .reveal').css('display','block');
-    } );
-  });
-</script>

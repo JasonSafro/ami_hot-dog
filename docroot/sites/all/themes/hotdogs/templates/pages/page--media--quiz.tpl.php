@@ -110,7 +110,7 @@
   <?php endif; ?>
 
   <div id="banner-wrap">
-      <div class="row">
+      <div class="row ">
           <div class="large-12 columns text-center gutter-top">
               <h1 id="page-title" class="title text-white"><?php print $title; ?></h1>
               <p class="lead hide-for-small text-white">From the National Hot Dog and Sausage Council</p>
@@ -119,7 +119,7 @@
   </div>
 
   <main role="main" class="row l-main gutter-top">
-    <div class="<?php print $main_grid; ?> main columns">
+    <div class="large-8 medium-8 main columns">
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlight panel callout">
           <?php print render($page['highlighted']); ?>
@@ -127,12 +127,6 @@
       <?php endif; ?>
 
       <a id="main-content"></a>
-
-      <?php if ($title && !$is_front): ?>
-        <?php print render($title_prefix); ?>
-        <h2 id="page-title" class="title"><?php print $title; ?></h2>
-        <?php print render($title_suffix); ?>
-      <?php endif; ?>
 
       <?php if (!empty($tabs)): ?>
         <?php print render($tabs); ?>
@@ -144,24 +138,10 @@
           <?php print render($action_links); ?>
         </ul>
       <?php endif; ?>
+      
+      <h2>How much do you know about hot dogs? Find out if you're a hot dog fact-champ or a wiener</h2>  
 
-      <?php if( $page['content_top'] ) : ?>
-      <div class="region region-content">
-        <?php print render($page['content_top']); ?>
-      </div>
-      <?php endif; ?>
-      
-      <?php if( $page['content'] ) : ?>
-      <div class="region region-content">
-        <?php print render($page['content']); ?>
-      </div>
-      <?php endif; ?>
-      
-      <?php if( $page['content_bottom'] ) : ?>
-      <div class="region region-content">
-        <?php print render($page['content_bottom']); ?>
-      </div>
-      <?php endif; ?>
+      <?php print render($page['content']); ?>
     </div>
     <!--/.main region -->
 
@@ -172,7 +152,7 @@
     <?php endif; ?>
 
     <?php if (!empty($page['sidebar_second'])): ?>
-      <aside role="complementary" class="<?php print $sidebar_sec_grid; ?> sidebar-second columns sidebar">
+      <aside role="complementary" class="large-4 medium-4 columns sidebar-second columns sidebar">
         <?php print render($page['sidebar_second']); ?>
       </aside>
     <?php endif; ?>
