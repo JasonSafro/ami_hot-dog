@@ -39,7 +39,7 @@
                 </li>
 
                 <li class="has-dropdown">
-                    <a href="#">Sausage Basics</a>
+                    <a href="sausage.php">Sausage Basics</a>
                     <ul class="dropdown">
                         <li><a href="#">Connosisseur's Guide</a></li>
                         <li><a href="#">Glossary</a></li>
@@ -49,7 +49,7 @@
                 </li>
 
                 <li class="has-dropdown">
-                    <a href="#">Culture</a>
+                    <a href="culture.php">Culture</a>
                     <ul class="dropdown">
                         <li><a href="#">Regional Hot Dogs</a></li>
                         <li><a href="#">Hot Dog History</a></li>
@@ -61,10 +61,20 @@
                         <li><a href="#">Hot Dog and Sausage Fame</a></li>
                         <li><a href="#">Hot Dogs in Sports</a></li>
                         <li><a href="quiz.php">Quiz</a></li>
+                        <li><a href="#">Jokes</a></li>
                     </ul>
                 </li>
                 <li><a href="restaurants.php">Restaurants</a></li>
-                <li><a href="#">Resources</a></li>
+
+                <li class="has-dropdown">
+                    <a href="resources.php">Resources</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Business Resources </a></li>
+                        <li><a href="#">Brochures & Posters</a></li>
+                        <li><a href="quiz.php">Order Hot Dogs and Sausages</a></li>
+                        <li><a href="#">Scientific Studies</a></li>
+                    </ul>
+                </li>
             </ul>
         </section>
     </nav>

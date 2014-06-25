@@ -13,7 +13,7 @@
     <!--ADD NEW STUFF HERE -->
 
 
-<div class="bkgrd-yellow">
+<div class="bkgrd-grey">
     <div class="row ">
         <div class="large-12 columns text-center gutter-top">
             <h1 class="text-white">Restaurants</h1>
@@ -24,19 +24,14 @@
 </div>
 
 <div class="row gutter-top">
-    <div class="large-12 medium-12 columns">
-        <h2 class="gutter-bottom-lg text-center">Search for hot dog restaurants in your state.</h2>
-
-        <p class="lead text-center">Search each state or click on the map to browse the whole nation!</p>
-
-
-        <div class="iframe-rwd">
-            <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d25616652.537331372!2d-96.15993950000002!3d38.394491104079606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHot+Dog+Restaurants+United+States!5e0!3m2!1sen!2sus!4v1403133274192 output=embed"></iframe><br />
-
-
-        </div>
-</div>
+  <div class="large-12 medium-12 columns">
+    <h2 class="gutter-bottom-lg text-center">Search for hot dog restaurants in your state.</h2>
+    <p class="lead text-center">Search each state or click on the map to browse the whole nation!</p>
+    <div class="iframe-rwd">
+      <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d25616652.537331372!2d-96.15993950000002!3d38.394491104079606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHot+Dog+Restaurants+United+States!5e0!3m2!1sen!2sus!4v1403133274192 output=embed"></iframe><br />
     </div>
+  </div>
+</div>
 <!--        http://stackoverflow.com/questions/12676725/responsive-iframe-google-maps-and-weird-resizing-->
 
 

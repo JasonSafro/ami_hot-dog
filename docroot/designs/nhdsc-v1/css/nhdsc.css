@@ -220,8 +220,10 @@ h2.dotted-header span.creme  {
 /*Used for round images shapes*/
 
 .discs {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 10px;}
 .discs img {
+    margin-top: 20px;
     padding: 20px;
     max-height: 200px; }
 
