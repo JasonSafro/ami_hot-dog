@@ -35,6 +35,34 @@ function hotdogs_preprocess_page(&$variables) {
     ));
   }	
 	
+  // Convenience variables
+  if (!empty($variables['page']['sidebar_first'])){
+    $left = $variables['page']['sidebar_first'];
+  }
+
+  if (!empty($variables['page']['sidebar_second'])) {
+    $right = $variables['page']['sidebar_second'];
+  }
+	
+  // Dynamic sidebars
+  if (!empty($left) && !empty($right)) {
+    $variables['main_grid'] = 'large-6 large-push-3';
+    $variables['sidebar_first_grid'] = 'large-3 large-pull-6';
+    $variables['sidebar_sec_grid'] = 'large-3';
+  } elseif (empty($left) && !empty($right)) {
+    $variables['main_grid'] = 'large-8 medium-8';
+    $variables['sidebar_first_grid'] = '';
+    $variables['sidebar_sec_grid'] = 'small-12 medium-4 large-4';
+  } elseif (!empty($left) && empty($right)) {
+    $variables['main_grid'] = 'large-9 large-push-3';
+    $variables['sidebar_first_grid'] = 'large-3 large-pull-9';
+    $variables['sidebar_sec_grid'] = '';
+  } else {
+    $variables['main_grid'] = 'large-12';
+    $variables['sidebar_first_grid'] = '';
+    $variables['sidebar_sec_grid'] = '';
+  }
+	
 }
 
 /**
