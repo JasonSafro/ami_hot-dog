@@ -668,3 +668,36 @@ h2.dotted-header span.creme  {
 	}
 }
 
+/**** Gallery Specific ****/
+.section-media {
+	.view-photo-galleries {
+		.filter {
+			@include clearfix-micro();
+			a {
+				background-color: #007095;
+				color: #fff;
+				font-size: 1.4rem;
+				line-height: 35px;
+				padding: 10px 20px;	
+				display: inline-block;	
+				float: left;
+				font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+				&.active {
+					background-color: #fffcef;
+					color: #339999;
+				}
+			}
+		}
+		.view-content {
+			@include clearfix-micro();
+			background-color: #fffcef;
+			padding: 15px;
+			.columns {
+				&:last-child {
+					float: left;
+				}
+			}
+		}	
+	}
+}
+

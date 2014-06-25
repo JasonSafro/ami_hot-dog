@@ -7599,3 +7599,48 @@ h2.dotted-header span.creme {
 .section-resources #banner-wrap {
   background-color: #de591d;
 }
+
+/**** Gallery Specific ****/
+.section-media .view-photo-galleries .filter {
+  *zoom: 1;
+}
+.section-media .view-photo-galleries .filter:before, .section-media .view-photo-galleries .filter:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.section-media .view-photo-galleries .filter:after {
+  clear: both;
+}
+.section-media .view-photo-galleries .filter a {
+  background-color: #007095;
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 35px;
+  padding: 10px 20px;
+  display: inline-block;
+  float: left;
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
+.section-media .view-photo-galleries .filter a.active {
+  background-color: #fffcef;
+  color: #339999;
+}
+.section-media .view-photo-galleries .view-content {
+  *zoom: 1;
+  background-color: #fffcef;
+  padding: 15px;
+}
+.section-media .view-photo-galleries .view-content:before, .section-media .view-photo-galleries .view-content:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.section-media .view-photo-galleries .view-content:after {
+  clear: both;
+}
+.section-media .view-photo-galleries .view-content .columns:last-child {
+  float: left;
+}

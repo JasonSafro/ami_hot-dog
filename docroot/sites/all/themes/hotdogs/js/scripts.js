@@ -97,12 +97,14 @@
 		}
 		
 		$(window).load(function() {
-			equalheight('.block-views .columns');			
+			equalheight('.block-views .columns');	
+			equalheight('.view-photo-galleries .columns');					
 		});
 		
 		
 		$(window).resize(function(){
 			equalheight('.block-views .columns');
+			equalheight('.view-photo-galleries .columns')
 		});
 
 
