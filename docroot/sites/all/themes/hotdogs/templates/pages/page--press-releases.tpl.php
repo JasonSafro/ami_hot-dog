@@ -89,16 +89,6 @@
     <!--/.l-featured -->
   <?php endif; ?>
 
-  <?php if ($messages && !$zurb_foundation_messages_modal): ?>
-    <!--/.l-messages -->
-    <section class="l-messages row">
-      <div class="large-12 columns">
-        <?php if ($messages): print $messages; endif; ?>
-      </div>
-    </section>
-    <!--/.l-messages -->
-  <?php endif; ?>
-
   <?php if (!empty($page['help'])): ?>
     <!--/.l-help -->
     <section class="l-help row">
@@ -118,13 +108,41 @@
       </div>
   </div>
 
-  <main role="main" class="row l-main gutter-top">
-    <div class="<?php print $main_grid; ?> main columns">
+	<div class="row gutter-top">
+
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlight panel callout">
           <?php print render($page['highlighted']); ?>
         </div>
       <?php endif; ?>
+      
+			<?php if ($messages && !$zurb_foundation_messages_modal): ?>
+        <!--/.l-messages -->
+        <section class="l-messages">
+          <div class="large-12 columns">
+            <?php if ($messages): print $messages; endif; ?>
+          </div>
+        </section>
+        <!--/.l-messages -->
+      <?php endif; ?>
+
+      <?php if (!empty($tabs)): ?>
+      	<div class="columns">
+					<?php print render($tabs); ?>
+          <?php if (!empty($tabs2)): print render($tabs2); endif; ?>
+        </div>
+      <?php endif; ?>
+
+      <?php if( $page['content_top'] ) : ?>
+      <div class="region region-content">
+        <?php print render($page['content_top']); ?>
+      </div>
+      <?php endif; ?>
+
+	</div>
+
+  <main role="main" class="row l-main gutter-top">
+    <div class="<?php print $main_grid; ?> main columns">
 
       <a id="main-content"></a>
 
@@ -132,17 +150,6 @@
         <?php print render($title_prefix); ?>
         <h2 id="page-content-title" class="title"><?php print $title; ?></h2>
         <?php print render($title_suffix); ?>
-      <?php endif; ?>
-
-      <?php if (!empty($tabs)): ?>
-        <?php print render($tabs); ?>
-        <?php if (!empty($tabs2)): print render($tabs2); endif; ?>
-      <?php endif; ?>
-
-      <?php if ($action_links): ?>
-        <ul class="action-links">
-          <?php print render($action_links); ?>
-        </ul>
       <?php endif; ?>
 
       <?php print render($page['content']); ?>
