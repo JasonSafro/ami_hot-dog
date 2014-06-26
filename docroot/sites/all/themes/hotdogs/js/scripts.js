@@ -41,7 +41,7 @@
 					
 					// Right or wrong
 					if( $(this).attr('data-answer-type') == 'correct' ) {
-						$('#response-' + nid).html('Right!');
+						$('#response-' + nid).html('Correct!');
 					} else {
 						$('#response-' + nid).html('False!');
 					}
