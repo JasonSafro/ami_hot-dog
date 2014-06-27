@@ -7551,8 +7551,12 @@ h2.dotted-header span.creme {
 .page-media-quiz #banner-wrap {
   background-color: #de591d;
 }
+.page-media-quiz .node-quiz-question {
+  padding: 0 0 0 2px;
+}
 .page-media-quiz .node-quiz-question ul li {
   margin: 0;
+  cursor: pointer;
 }
 .page-media-quiz .reveal {
   display: none;
@@ -7562,6 +7566,9 @@ h2.dotted-header span.creme {
 }
 .page-media-quiz .orbit-container {
   padding-bottom: 60px;
+}
+.page-media-quiz .orbit-container .orbit-slides-container {
+  overflow: visibile !important;
 }
 .page-media-quiz .orbit-container .orbit-slides-container .views-row .node-title {
   display: none;

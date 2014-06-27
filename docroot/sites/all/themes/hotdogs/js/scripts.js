@@ -16,13 +16,17 @@
 				$('a.orbit-prev > span').replaceWith( "<span>Previous</span>" );
 				$('a.orbit-next > span').replaceWith( "<span>Next</span>" );			
 			
+				$('.orbit-container .orbit-slides-container').css('overflow', '');
+			
 				$('a.orbit-prev, a.orbit-next').click(function() {						
 					if($('.orbit-container .views-row').hasClass('active')) {
 						//reset
 						$('.orbit-container').css({ 
 							'padding-bottom': '60px',
 							'overflow-y': 'hidden'
-						});			
+						});	
+						
+						$('.orbit-container .orbit-slides-container').css('overflow', '');		
 					}
 				});		
 				
@@ -30,6 +34,8 @@
 				var revealHeight = 0;		
 				
 				$('.one-answer').click(function() {
+					
+					$('.orbit-container .orbit-slides-container').css('overflow', '');	
 					
 					// Get the NID
 					var nid = $(this).attr("data-nid");

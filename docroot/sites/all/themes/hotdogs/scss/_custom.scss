@@ -601,9 +601,11 @@ h2.dotted-header span.creme  {
 	}
 	.node-quiz-question {
 		@extend .sans;
+		padding: 0 0 0 2px;
 		ul {
 			li {
 				margin: 0;
+				cursor: pointer;
 			}
 		}
 	}
@@ -618,6 +620,7 @@ h2.dotted-header span.creme  {
 	.orbit-container {
 		padding-bottom: 60px;
 		.orbit-slides-container {
+			overflow: visibile !important;
 			.views-row {
 				.node-title {
 					display: none;

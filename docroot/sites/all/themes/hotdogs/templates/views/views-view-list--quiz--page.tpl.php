@@ -13,7 +13,7 @@
   <?php if (!empty($title)) : ?>
     <h3><?php print $title; ?></h3>
   <?php endif; ?>
-  <ol class="example-orbit" data-orbit data-options="animation:slide;pause_on_hover:true;animation_speed:500;navigation_arrows:true;bullets:false;slide_number:false;timer:false;variable_height:true;">
+  <ol style="overflow: visible;" class="example-orbit" data-orbit data-options="animation:slide;pause_on_hover:true;animation_speed:500;navigation_arrows:true;bullets:false;slide_number:false;timer:false;variable_height:true;">
     <?php foreach ($rows as $id => $row): ?>
       <li class="<?php print $classes_array[$id]; ?>"><?php print $row; ?></li>
     <?php endforeach; ?>
