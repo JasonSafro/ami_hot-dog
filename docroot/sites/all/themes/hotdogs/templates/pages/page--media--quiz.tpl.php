@@ -147,7 +147,7 @@
 
       <a id="main-content"></a>
       
-      <h2>How much do you know about hot dogs? Find out if you're a hot dog fact-champ or a wiener</h2>  
+      <h2>How much do you know about hot dogs? Find out if you're a hot dog fact-champ or a wiener</h2>
 
       <?php print render($page['content']); ?>
     </div>

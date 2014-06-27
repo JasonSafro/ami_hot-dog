@@ -110,14 +110,18 @@
   <?php endif; ?>
   
   <!-- Hero Area -->
-  <section class="full-screen-photo checks" id="features-hero">
-      <div class="row bkgrd-white roundcrnr">
+<!--  <section class="full-screen-photo checks" id="features-hero">-->
+  <section id="features-hero" class="full-screen-photo checks">
+<!--      <div class="row bkgrd-white roundcrnr">-->
+          <div class="row bkgrd-white ">
           <div class="small-12 medium-4 large-4 column">
               <h1 class="main-header">Facts Figures &amp; Folklore</h1><br>
               <a class="large radius button" href="#">Get Some Facts!</a><br>
           </div>
-          <div class="medium-8 large-8 columns">
-              <img src="<?php echo base_path() . path_to_theme(); ?>/images/large-image-dog.jpg">
+          <div class="medium-8 large-8 columns nopad-right">
+              <img src="<?php echo base_path() . path_to_theme(); ?>/images/hero-image-hotdog-fork.jpg">
+<!--              </images/large-image-dog.jpg">-->
+
           </div>
       </div>
   </section>
@@ -127,7 +131,7 @@
   <div class="bkgrd-lightred">
       <div class="row">
           <div class="large-12 columns text-center">
-              <h2 class="text-white gutter-top">Hot dog and sausage statistics, recipes, films that have featured hot dogs and more.</h2>
+              <h2 class="text-white gutter-top">National Hot Dog and Sausage Council statistics, recipes, films that have featured hot dogs and more.</h2>
               <p class=" lead hide-for-small text-white">We have the skinny on all of the latest facts and trivia, you name it we have it.</p>
           </div>
       </div>
