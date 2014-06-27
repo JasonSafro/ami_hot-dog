@@ -11,14 +11,17 @@
     <!--end headandtopnavbar.php-->
 
     <!--ADD NEW STUFF HERE -->
-    <section id="features-hero" class="full-screen-photo checks">
-        <div class="row bkgrd-white roundcrnr">
-            <div class="small-12 medium-4 large-4 column">
-                <h1 class="main-header">Facts Figures & Folklore</h1><br>
-                <a href="#" class="large radius button">Get Some Facts!</a><br/>
+<!--    <section id="features-hero" class="bkgrd-texture-checks">-->
+    <section id="features-hero" class="bkgrd-liteyellow">
+        <div class="row">
+            <div class="small-12 medium-4 large-4 column gutter-bottom-lg">
+                <h1 class="small-header">National Hot Dog and Sausage Council</em></h1>
+                <h2 class="main-header text-lightred">Facts Figures & Folklore</h2><br>
+                <a href="#" class="large radius button bkgrd-teal">Get Some Facts!</a><br/>
             </div>
-            <div class="medium-8 large-8 columns">
-                <img src="img/site-images/large-image-dog.jpg">
+            <div class="medium-8 large-8 columns nopad-right">
+<!--                <img src="img/site-images/large-image-dog.jpg">-->
+                <img src="img/site-images/hero-image-hotdog-fork.jpg" >
             </div>
         </div>
     </section>
@@ -26,7 +29,7 @@
 <div class="bkgrd-lightred">
     <div class="row">
         <div class="large-12 columns text-center">
-            <h2 class="text-white gutter-top">Hot dog and sausage statistics, recipes, films that have featured hot dogs and more.</h2>
+            <h2 class="text-white gutter-top">Statistics, recipes, films that have featured hot dogs and more.</h2>
             <p class=" lead hide-for-small text-white">We have the skinny on all of the latest facts and trivia, you name it we have it.</p>
         </div>
     </div>

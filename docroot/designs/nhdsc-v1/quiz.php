@@ -87,18 +87,21 @@
 
             <div class="gutter-top" ><a href="#" class="button roundcrnr">Next</a></div>
         </div>
-
     </div>
+
+
     <div class="large-4 medium-4 columns gutter-top">
         <div class="custom-panel bkgrd-liteyellow roundcrnr text-heavy text-center">
-            <h3 class="">Seriously Funny</h3>
+            <h3 class="text-heavy text-upper gutter-bottom">Seriously Funny</h3>
             <h4 class="text-hotdogred">Q: Where do you put a smart hot dog? </h4>
-            <h4 class="answer"> A: On the honor roll.
-            </h4>
-
-            <p class="gutter-top"><a href="#" class="medium button center bkgrd-green">Get more jokes!</a></p>
+            <h4 class="joke-answer"> A: On the honor roll.</h4>
+            <p class="gutter-top"><a href="#" class="medium button center bkgrd-green">Get More Jokes!</a></p>
         </div>
     </div>
+
+
+
+
 </div>
 
 <!--END ADD NEW CONTENT HERE -->

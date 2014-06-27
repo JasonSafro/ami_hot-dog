@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>National Hot Dog and Sausage Council | Sausage Basics</title>
+    <title>National Hot Dog and Sausage Council | Culture</title>
 
 <!--start headandtopnavbar.php-->
     <?php include('headandtopnavbar.php'); ?>
@@ -25,7 +25,7 @@
 
         <div class="large-12 medium-12 columns">
 
-            <h2 class="gutter-bottom-lg text-center">Hot Dogs have a culture all their own. </h2>
+            <h2 class="gutter-bottom-lg text-center">Hot dogs have a culture all their own. </h2>
             <p class="lead">They are a favorite American food –but so much more. They are the stuff of movies and music, of regional and city rivalries and of our very vocabulary. </p>
             <p class="lead">A “hot dog” can be a dare-devil or a show off. When paired with an exclamation point, “Hot Dog!” conveys joy and happiness.</p>
 

@@ -71,7 +71,7 @@
 <div class="row push-down last-section">
     <div class="large-6 columns">
         <p class="gutter-left"> <img src="img/site-images/safety.jpg"/></p>
-<!--        <p><img src="http://placehold.it/700x700&text=[img]"/></p>-->
+<!--        <p><img src="http://placehold.it/250x635&text=[img]"/></p>-->
 
     </div>
     <div class="large-6 columns">

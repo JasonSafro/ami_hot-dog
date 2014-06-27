@@ -13,16 +13,15 @@
 <body class="bkgrd-texture-creme">
 
 
-
 <div class="contain-to-grid fixed">
 
-    <nav class="top-bar bkgrd-hotdogred" data-topbar>
+    <nav class="top-bar bkgrd-lightred" data-topbar>
         <ul class="title-area">
-            <li class="name">
-                <h1><a href="index.php">National Hot Dog and Sausage Council</a></h1>
+            <li class="name logo">
+                <h1><a href="index.php">NHDSC</a></h1>
             </li>
             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span class="sans">Menu</span></a></li>
         </ul>
 
         <section class="top-bar-section ">
@@ -35,14 +34,16 @@
                         <li><a href="gallery.php">Photo Gallery</a></li>
                         <li><a href="pressreleases.php">Press Releases</a></li>
                         <li><a href="about.php">About</a></li>
+                        <li><a href="quiz.php">Quiz</a></li>
+
                     </ul>
                 </li>
 
                 <li class="has-dropdown">
-                    <a href="sausage.php">Sausage Basics</a>
+                    <a href="sausage-basics.php">Sausage Basics</a>
                     <ul class="dropdown">
-                        <li><a href="#">Connosisseur's Guide</a></li>
-                        <li><a href="#">Glossary</a></li>
+                        <li><a href="beer-sausage.php">Connosisseur's Guide</a></li>
+                        <li><a href="sausage-glossary.php">Sausage Glossary</a></li>
                         <li><a href="#">Tips for Cooking</a></li>
                         <li><a href="#">Trendy Meats Easy</a></li>
                     </ul>
@@ -51,8 +52,8 @@
                 <li class="has-dropdown">
                     <a href="culture.php">Culture</a>
                     <ul class="dropdown">
-                        <li><a href="#">Regional Hot Dogs</a></li>
-                        <li><a href="#">Hot Dog History</a></li>
+                        <li><a href="regional-hotdogs.php">Regional Hot Dogs</a></li>
+                        <li><a href="history.php">Hot Dog History</a></li>
                         <li><a href="#">How Hot Dogs are Made </a></li>
                         <li><a href="#">Kosher Hot Dogs</a></li>
                         <li><a href="#">Hot Dog Primer</a></li>
@@ -60,7 +61,6 @@
                         <li><a href="#">Hot Dogs in Sports</a></li>
                         <li><a href="#">Hot Dog and Sausage Fame</a></li>
                         <li><a href="#">Hot Dogs in Sports</a></li>
-                        <li><a href="quiz.php">Quiz</a></li>
                         <li><a href="#">Jokes</a></li>
                     </ul>
                 </li>
@@ -69,10 +69,9 @@
                 <li class="has-dropdown">
                     <a href="resources.php">Resources</a>
                     <ul class="dropdown">
-                        <li><a href="#">Business Resources </a></li>
+                        <li><a href="business-resources.php">Business Resources </a></li>
                         <li><a href="#">Brochures & Posters</a></li>
-                        <li><a href="quiz.php">Order Hot Dogs and Sausages</a></li>
-                        <li><a href="#">Scientific Studies</a></li>
+                        <li><a href="order-hotdogs-sausages.php">Order Hot Dogs and Sausages</a></li>
                     </ul>
                 </li>
             </ul>

@@ -25,38 +25,36 @@
 
         <div class="large-12 medium-12 columns">
             <h2 class="gutter-bottom-lg text-center">Fun and Useful Resources</h2>
-            <p class="lead">Venison pancetta chicken ribeye prosciutto leberkas, jowl hamburger frankfurter meatloaf chuck bacon pork belly.</p>
-            <p class="lead">Meatloaf porchetta short loin ham hock drumstick shankle meatball biltong brisket. Chuck sausage meatball pig landjaeger capicola pastrami pork loin. Tail rump chicken salami brisket, ham hock ground round andouille tongue. Kielbasa venison cow, tongue pork chop porchetta kevin turducken spare ribs sausage pig.</p>
-
+            <p class="lead">For further knowledge and resources, browse the links below for tools and essentials needed to further your hot dog and sausage ventures.</p>
 
             <div class="row centered-text">
                 <div class="medium-6 large-3 columns discs">
-                    <a href="#">
+                    <a href="business-resources.php">
                         <img src="img/site-images/disc-253x253-placeholder.png"></a>
-                    <h3><a href="#">Sell Your Own</a></h3>
-                    <p>Tenderloin meatloaf short loin, kevin shank boudin brisket shank brisket.</p>
-                    <a href="#">Learn more →</a>
+                    <h3><a href="business-resources.php">Sell Your Own</a></h3>
+                    <p>Hot dogs, get your hot dogs! How to start a cart.</p>
+                    <a href="business-resources.php">Learn more →</a>
                 </div>
                 <div class="medium-6 large-3 columns discs">
                     <a href="#">
                         <img src="img/site-images/disc-253x253-placeholder.png"></a>
                     <h3><a href="#">Brochures and Tray Liners </a></h3>
-                    <p>Tenderloin meatloaf short loin, kevin shank boudin brisket shank brisket.</p>
+                    <p>Compliment any hot dog with a brochure and decorative tray liners.</p>
                     <a href="#">Learn more →</a>
                 </div>
                 <div class="medium-6 large-3 columns discs">
-                    <a href="#">
+                    <a href="order-hotdogs-sausages.php">
                         <img src="img/site-images/disc-253x253-placeholder.png"></a>
-                    <h3><a href="#">Order Hot Dogs and Sausages</a></h3>
-                    <p>Tenderloin meatloaf short loin, kevin shank boudin brisket shank brisket.</p>
-                    <a href="#">Learn more →</a>
+                    <h3><a href="order-hotdogs-sausages.php">Order Hot Dogs and Sausages</a></h3>
+                    <p>Stifle that craving and discover order hot dogs… online!</p>
+                    <a href="order-hotdogs-sausages.php">Learn more →</a>
                 </div>
                 <div class="medium-6 large-3 columns discs">
-                    <a href="#">
+                    <a href="business-resources.php">
                         <img src="img/site-images/disc-253x253-placeholder.png"></a>
-                    <h3><a href="#">Scientific Studies</a></h3>
-                    <p>Tenderloin meatloaf short loin, kevin shank boudin brisket shank brisket.</p>
-                    <a href="#">Learn more →</a>
+                    <h3><a href="business-resources.php">Scientific Studies</a></h3>
+                    <p>Need help interpreting a new scientific study?</p>
+                    <a href="business-resources.php">Learn more →</a>
                 </div>
             </div>
 </div>   <!--end -->
